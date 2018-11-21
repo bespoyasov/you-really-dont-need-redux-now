@@ -7,7 +7,6 @@ import Form from './Form'
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
-  const {counter} = state
 
   return (
     <StoreContext.Provider value={{dispatch, state}}>
